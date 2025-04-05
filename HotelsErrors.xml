@@ -2,8 +2,8 @@
 <!-- Deliberately broken file to fail validation -->
 <Hotel
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://YOUR_USERNAME.github.io/YOUR_REPO/Hotels.xsd">
-
+  xsi:noNamespaceSchemaLocation="https://blusian.github.io/cse445_assignment4/Hotels.xsd">
+  
   <Hotel Rating="4.2">
     <Name>Westin</Name>
     <Phone>480-111-1111</Phone>
