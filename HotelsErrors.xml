@@ -1,26 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Deliberately broken file to fail validation -->
-<!-- 1) Wrong root element: <Hotel> instead of <Hotels> -->
-<Hotel
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotels
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="https://blusian.github.io/cse445_assignment4/Hotels.xsd">
-
-	<!-- 2) One hotel has the required Rating attribute, so it's fine here -->
 	<Hotel Rating="4.2">
 		<Name>Westin</Name>
-		<Phone>480-111-1111</Phone>
-		<Phone>800-222-2222</Phone>
-		<Address NearstAirport="Sky Habor">
+		<Phone>480-968-8885</Phone>
+		<Phone>800-937-8461</Phone>
+		<Address NearstAirport="Sky Harbor">
 			<Number>11</Number>
-			<Street>E 7th St</Street>
+			<Street>E.7th St</Street>
 			<City>Tempe</City>
 			<State>AZ</State>
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
 
-	<!-- 2) Missing the required Rating attribute here -->
-	<Hotel>
+	<Hotel Rating="3.9">
 		<Name>Hilton Phoenix</Name>
 		<Phone>602-333-3333</Phone>
 		<Address>
@@ -32,10 +27,10 @@
 		</Address>
 	</Hotel>
 
-	<!-- 3) Missing <Phone> entirely -->
 	<Hotel Rating="4.0">
 		<Name>Marriott Downtown</Name>
-		<Address>
+		<Phone>602-444-4444</Phone>
+		<Address NearstAirport="Sky Harbor">
 			<Number>123</Number>
 			<Street>W Adams St</Street>
 			<City>Phoenix</City>
@@ -44,7 +39,6 @@
 		</Address>
 	</Hotel>
 
-	<!-- 4) Unclosed <Address> tag -->
 	<Hotel Rating="4.1">
 		<Name>Hyatt Regency</Name>
 		<Phone>602-555-5555</Phone>
@@ -54,13 +48,11 @@
 			<City>Phoenix</City>
 			<State>AZ</State>
 			<Zip>85004</Zip>
-			<!-- no closing </Address> -->
-		</Hotel>
+		</Address>
+	</Hotel>
 
-	<!-- 5) Duplicate <Name> elements -->
 	<Hotel Rating="3.8">
 		<Name>Courtyard Tempe</Name>
-		<Name>ExtraName</Name>
 		<Phone>480-666-6666</Phone>
 		<Address>
 			<Number>601</Number>
@@ -70,4 +62,65 @@
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
-</Hotel>
+
+	<Hotel Rating="3.7">
+		<Name>Residence Inn</Name>
+		<Phone>480-777-7777</Phone>
+		<Address NearstAirport="Sky Harbor">
+			<Number>510</Number>
+			<Street>S Forest Ave</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.5">
+		<Name>Drury Inn</Name>
+		<Phone>602-888-8888</Phone>
+		<Address>
+			<Number>233</Number>
+			<Street>S 4th St</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85004</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="3.9">
+		<Name>DoubleTree</Name>
+		<Phone>480-999-9999</Phone>
+		<Address>
+			<Number>2100</Number>
+			<Street>S Priest Dr</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85282</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.0">
+		<Name>Embassy Suites</Name>
+		<Phone>602-101-1010</Phone>
+		<Address NearstAirport="Sky Harbor">
+			<Number>4400</Number>
+			<Street>E Washington St</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85034</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.3">
+		<Name>AC Hotel</Name>
+		<Phone>602-202-2020</Phone>
+		<Address>
+			<Number>100</Number>
+			<Street>N 1st St</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85004</Zip>
+		</Address>
+	</Hotel>
+
+</Hotels>
