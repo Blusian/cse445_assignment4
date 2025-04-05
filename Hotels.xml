@@ -8,7 +8,7 @@
 		<Name>Westin</Name>
 		<Phone>480-111-1111</Phone>
 		<Phone>800-222-2222</Phone>
-		<Address NearstAirport="Sky Habor">
+		<Address NearstAirport="Sky Harbor">
 			<Number>11</Number>
 			<Street>E 7th St</Street>
 			<City>Tempe</City>
@@ -32,7 +32,7 @@
 	<Hotel Rating="4.0">
 		<Name>Marriott Downtown</Name>
 		<Phone>602-444-4444</Phone>
-		<Address NearstAirport="Sky Habor">
+		<Address NearstAirport="Sky Harbor">
 			<Number>123</Number>
 			<Street>W Adams St</Street>
 			<City>Phoenix</City>
@@ -68,7 +68,7 @@
 	<Hotel Rating="3.7">
 		<Name>Residence Inn</Name>
 		<Phone>480-777-7777</Phone>
-		<Address NearstAirport="Sky Habor">
+		<Address NearstAirport="Sky Harbor">
 			<Number>510</Number>
 			<Street>S Forest Ave</Street>
 			<City>Tempe</City>
@@ -104,7 +104,7 @@
 	<Hotel Rating="4.0">
 		<Name>Embassy Suites</Name>
 		<Phone>602-101-1010</Phone>
-		<Address NearstAirport="Sky Habor">
+		<Address NearstAirport="Sky Harbor">
 			<Number>4400</Number>
 			<Street>E Washington St</Street>
 			<City>Phoenix</City>
