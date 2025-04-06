@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Valid XML with exactly 10 hotels -->
 <Hotels
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="https://blusian.github.io/cse445_assignment4/Hotels.xsd">
 
+	<!-- Sample from Figure 1 (must include these exact values) -->
 	<Hotel Rating="4.2">
 		<Name>Westin</Name>
 		<Phone>480-968-8885</Phone>
@@ -16,6 +18,7 @@
 		</Address>
 	</Hotel>
 
+	<!-- Your other nine hotels (unchanged) -->
 	<Hotel Rating="3.9">
 		<Name>Hilton Phoenix</Name>
 		<Phone>602-333-3333</Phone>
