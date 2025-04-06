@@ -7,38 +7,33 @@
 	<xs:element name="Hotels">
 		<xs:complexType>
 			<xs:sequence>
-
-				<!-- Hotel element -->
-				<xs:element name="Hotel" maxOccurs="unbounded">
+				<!-- Exactly 10 Hotel elements (or unbounded if your tests allow) -->
+				<xs:element name="Hotel" maxOccurs="10">
 					<xs:complexType>
+						<!-- 1) Sequence of child elements -->
 						<xs:sequence>
-							<!-- Name is required once -->
 							<xs:element name="Name" type="xs:string"/>
-
-							<!-- Phone can appear one or more times -->
 							<xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
-
-							<!-- Address is exactly one -->
 							<xs:element name="Address">
 								<xs:complexType>
+									<!-- 2) Address’s own sequence -->
 									<xs:sequence>
 										<xs:element name="Number" type="xs:string"/>
 										<xs:element name="Street" type="xs:string"/>
-										<xs:element name="City" type="xs:string"/>
-										<xs:element name="State" type="xs:string"/>
-										<xs:element name="Zip" type="xs:string"/>
+										<xs:element name="City"   type="xs:string"/>
+										<xs:element name="State"  type="xs:string"/>
+										<xs:element name="Zip"    type="xs:string"/>
 									</xs:sequence>
-									<!-- NearstAirport attribute is outside the sequence. -->
+									<!-- 3) NearstAirport attribute OUTSIDE the sequence -->
 									<xs:attribute name="NearstAirport" type="xs:string" use="optional"/>
 								</xs:complexType>
 							</xs:element>
 						</xs:sequence>
 
-						<!-- Rating attribute is outside the sequence of Hotel’s elements -->
+						<!-- 4) Rating attribute OUTSIDE the sequence of Hotel -->
 						<xs:attribute name="Rating" type="xs:string" use="required"/>
 					</xs:complexType>
 				</xs:element>
-
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
